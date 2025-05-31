@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WARM - Winter Comfort Solutions</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<link rel="stylesheet" href="./style.css">
+
+<script>tailwind.config={theme:{extend:{colors:{primary:'#FF4500',secondary:'#8B4513'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+</head>
+<body class="bg-gradient-to-b from-[#2B1810] to-[#1A0F09] text-white min-h-screen">
+<!-- Header Navigation -->
+<header class="relative z-10">
+<nav class="container mx-auto px-6 py-4 flex items-center justify-between">
+<div class="flex items-center">
+<a href="#" class="text-3xl font-['Pacifico'] text-white">WARM</a>
+</div>
+<div class="hidden md:flex space-x-8">
+<a href="#" class="text-white hover:text-primary transition-colors">Home</a>
+<a href="#" class="text-white hover:text-primary transition-colors">Products</a>
+<a href="#" class="text-white hover:text-primary transition-colors">About</a>
+<a href="#" class="text-white hover:text-primary transition-colors">Contact</a>
+</div>
+<div class="flex items-center space-x-4">
+<div class="w-10 h-10 flex items-center justify-center">
+<i class="ri-search-line ri-xl"></i>
+</div>
+<div class="w-10 h-10 flex items-center justify-center relative">
+<i class="ri-shopping-cart-line ri-xl"></i>
+<span class="absolute -top-1 -right-1 bg-primary text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">3</span>
+</div>
+<button class="bg-primary text-white px-4 py-2 rounded-button hover:bg-opacity-90 transition-colors whitespace-nowrap">Sign In</button>
+</div>
+</nav>
+</header>
+<!-- Hero Section -->
+<section class="relative w-full min-h-[80vh] flex items-center">
+<div class="absolute inset-0">
+<img src="https://static.readdy.ai/image/ac1b95b4701609d89e05f625418b04a6/5d430131212996562e8f4757068affd9.jpeg" alt="WARM Winter Products" class="w-full h-full object-cover">
+<div class="absolute inset-0 bg-gradient-to-r from-black/80 to-transparent"></div>
+</div>
+<div class="container relative mx-auto px-6 py-20">
+<div class="max-w-3xl">
+<h1 class="text-6xl font-bold mb-6">Stay WARM This Winter</h1>
+<p class="text-xl mb-8">Premium winter comfort solutions designed to keep you cozy during the coldest days. Enjoy free delivery anywhere in Cape Town! Currently serving the Cape Town metropolitan area only.</p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-white px-8 py-3 rounded-button text-lg hover:bg-opacity-90 transition-colors whitespace-nowrap">Shop Now</button>
+<button class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-button text-lg hover:bg-white hover:bg-opacity-10 transition-colors whitespace-nowrap">Learn More</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Products -->
+<section class="py-20 bg-black bg-opacity-30">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold mb-4">Our Winter Essentials</h2>
+<p class="text-lg max-w-2xl mx-auto text-gray-300">Discover our premium collection of winter comfort products designed to keep you warm and cozy all season long.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Product 1 -->
+<div class="bg-[#1D100A] rounded-lg overflow-hidden shadow-lg transition-all duration-300 product-card">
+<div class="h-64 overflow-hidden">
+<img src="https://static.readdy.ai/image/ac1b95b4701609d89e05f625418b04a6/23953282004a428bf03a7281cd79429f.jpeg" alt="Paraffin Heater" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold mb-2">Vintage Paraffin Heater</h3>
+<p class="text-gray-300 mb-4">Classic design with modern safety features. Provides warm, ambient heat for any room.</p>
+<div class="flex justify-between items-center">
+<span class="text-2xl font-bold text-primary">$89.99</span>
+<button class="bg-primary text-white p-2 rounded-button hover:bg-opacity-90 transition-colors whitespace-nowrap">Add to Cart</button>
+</div>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="bg-[#1D100A] rounded-lg overflow-hidden shadow-lg transition-all duration-300 product-card">
+<div class="h-64 overflow-hidden">
+<img src="https://static.readdy.ai/image/ac1b95b4701609d89e05f625418b04a6/84a2512b6d4a5e7ae1a36071580e6479.jpeg" alt="Hot Water Bottle" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold mb-2">Premium Hot Water Bottle</h3>
+<p class="text-gray-300 mb-4">High-capacity rubber with knitted cover. Stays warm for up to 6 hours.</p>
+<div class="flex justify-between items-center">
+<span class="text-2xl font-bold text-primary">$24.99</span>
+<button class="bg-primary text-white p-2 rounded-button hover:bg-opacity-90 transition-colors whitespace-nowrap">Add to Cart</button>
+</div>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="bg-[#1D100A] rounded-lg overflow-hidden shadow-lg transition-all duration-300 product-card">
+<div class="h-64 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=A%20set%20of%20elegant%20stainless%20steel%20thermal%20cups%20in%20various%20earthy%20colors%20%28beige%2C%20forest%20green%2C%20and%20dark%20brown%29.%20The%20cups%20have%20a%20modern%2C%20minimalist%20design%20with%20handles%20and%20are%20arranged%20artfully%20on%20a%20dark%20wooden%20surface.%20Steam%20is%20rising%20from%20one%20cup%2C%20suggesting%20hot%20content.%20The%20image%20has%20warm%20lighting%20that%20highlights%20the%20metallic%20finish%20of%20the%20cups.&width=600&height=600&seq=1003&orientation=squarish" alt="Steel Thermal Cups" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold mb-2">Insulated Steel Cups</h3>
+<p class="text-gray-300 mb-4">Double-walled vacuum insulation. Keeps drinks hot for 12+ hours.</p>
+<div class="flex justify-between items-center">
+<span class="text-2xl font-bold text-primary">$32.99</span>
+<button class="bg-primary text-white p-2 rounded-button hover:bg-opacity-90 transition-colors whitespace-nowrap">Add to Cart</button>
+</div>
+</div>
+</div>
+<!-- Product 4 -->
+<div class="bg-[#1D100A] rounded-lg overflow-hidden shadow-lg transition-all duration-300 product-card">
+<div class="h-64 overflow-hidden">
+<img src="https://static.readdy.ai/image/ac1b95b4701609d89e05f625418b04a6/957d29fa0c77c96abfb3ba5cc5662831.jpeg" alt="Fleece Blankets" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold mb-2">Ultra-Soft Fleece Blankets</h3>
+<p class="text-gray-300 mb-4">Premium microfiber fleece. Lightweight yet incredibly warm and cozy.</p>
+<div class="flex justify-between items-center">
+<span class="text-2xl font-bold text-primary">$49.99</span>
+<button class="bg-primary text-white p-2 rounded-button hover:bg-opacity-90 transition-colors whitespace-nowrap">Add to Cart</button>
+</div>
+</div>
+</div>
+</div>
+<div class="text-center mt-12">
+<button class="border-2 border-primary text-primary px-8 py-3 rounded-button text-lg hover:bg-primary hover:text-white transition-colors whitespace-nowrap">View All Products</button>
+</div>
+</div>
+</section>
+<!-- Features Section -->
+<section class="py-20">
+<div class="container mx-auto px-6">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div>
+<img src="https://readdy.ai/api/search-image?query=A%20cozy%20winter%20scene%20showing%20a%20person%20enjoying%20WARM%20products.%20The%20image%20shows%20hands%20holding%20a%20hot%20drink%20in%20a%20thermal%20cup%2C%20with%20a%20paraffin%20heater%20glowing%20in%20the%20background%20and%20a%20fleece%20blanket%20draped%20over%20legs.%20The%20scene%20is%20bathed%20in%20warm%20amber%20light%20creating%20a%20cozy%20atmosphere.%20The%20image%20focuses%20on%20the%20products%20and%20their%20use%2C%20not%20showing%20any%20faces.&width=800&height=600&seq=1005&orientation=landscape" alt="WARM Products in Use" class="rounded-lg shadow-2xl w-full">
+</div>
+<div>
+<h2 class="text-4xl font-bold mb-6">Why Choose WARM?</h2>
+<div class="space-y-8">
+<div class="flex items-start">
+<div class="bg-primary rounded-full p-2 mr-4 mt-1">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-shield-check-line ri-lg"></i>
+</div>
+</div>
+<div>
+<h3 class="text-xl font-bold mb-2">Premium Quality</h3>
+<p class="text-gray-300">All our products are crafted with the highest quality materials, designed to last for years while providing exceptional comfort.</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="bg-primary rounded-full p-2 mr-4 mt-1">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-leaf-line ri-lg"></i>
+</div>
+</div>
+<div>
+<h3 class="text-xl font-bold mb-2">Eco-Friendly</h3>
+<p class="text-gray-300">We're committed to sustainability, using eco-friendly materials and manufacturing processes to reduce our environmental impact.</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="bg-primary rounded-full p-2 mr-4 mt-1">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-truck-line ri-lg"></i>
+</div>
+</div>
+<div>
+<h3 class="text-xl font-bold mb-2">Fast Delivery</h3>
+<p class="text-gray-300">Stay warm without the wait. We offer expedited shipping options to ensure your comfort products arrive when you need them most.</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="bg-primary rounded-full p-2 mr-4 mt-1">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-customer-service-2-line ri-lg"></i>
+</div>
+</div>
+<div>
+<h3 class="text-xl font-bold mb-2">Exceptional Support</h3>
+<p class="text-gray-300">Our customer service team is available 7 days a week to answer questions and ensure your complete satisfaction.</p>
+</div>
+</div>
+</div>
+<button class="mt-8 bg-primary text-white px-8 py-3 rounded-button text-lg hover:bg-opacity-90 transition-colors whitespace-nowrap">Learn More</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials Section -->
+<section class="py-20 bg-black bg-opacity-30">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold mb-4">What Our Customers Say</h2>
+<p class="text-lg max-w-2xl mx-auto text-gray-300">Hear from people who have transformed their winter experience with our products.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Testimonial 1 -->
+<div class="testimonial-card p-8 rounded-lg">
+<div class="flex items-center mb-4">
+<div class="text-primary">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-star-fill ri-lg"></i>
+</div>
+</div>
+<div class="text-primary">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-star-fill ri-lg"></i>
+</div>
+</div>
+<div class="text-primary">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-star-fill ri-lg"></i>
+</div>
+</div>
+<div class="text-primary">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-star-fill ri-lg"></i>
+</div>
+</div>
+<div class="text-primary">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-star-fill ri-lg"></i>
+</div>
+</div>
+</div>
+<p class="text-gray-300 mb-6">"The paraffin heater has been perfect for those chilly Cape Town evenings. It provides just the right amount of warmth and creates such a cozy atmosphere with its amber glow. The free delivery was super quick too!"</p>
+<div class="flex items-center">
+<div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mr-4">
+<span class="font-bold text-lg">AM</span>
+</div>
+<div>
+<h4 class="font-bold">Aisha Mbeki</h4>
+<p class="text-sm text-gray-400">Sea Point, Cape Town</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="testimonial-card p-8 rounded-lg">
+<div class="flex items-center mb-4">
+<div class="text-primary">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-star-fill ri-lg"></i>
+</div>
+</div>
+<div class="text-primary">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-star-fill ri-lg"></i>
+</div>
+</div>
+<div class="text-primary">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-star-fill ri-lg"></i>
+</div>
+</div>
+<div class="text-primary">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-star-fill ri-lg"></i>
+</div>
+</div>
+<div class="text-primary">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-star-fill ri-lg"></i>
+</div>
+</div>
+</div>
+<p class="text-gray-300 mb-6">"These steel thermal cups are perfect for my early morning walks on the promenade. My coffee stays hot despite the strong Atlantic winds. Free delivery to my apartment in Camps Bay was a great bonus!"</p>
+<div class="flex items-center">
+<div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mr-4">
+<span class="font-bold text-lg">DV</span>
+</div>
+<div>
+<h4 class="font-bold">David van der Merwe</h4>
+<p class="text-sm text-gray-400">Camps Bay, Cape Town</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="testimonial-card p-8 rounded-lg">
+<div class="flex items-center mb-4">
+<div class="text-primary">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-star-fill ri-lg"></i>
+</div>
+</div>
+<div class="text-primary">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-star-fill ri-lg"></i>
+</div>
+</div>
+<div class="text-primary">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-star-fill ri-lg"></i>
+</div>
+</div>
+<div class="text-primary">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-star-fill ri-lg"></i>
+</div>
+</div>
+<div class="text-primary">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-star-fill ri-lg"></i>
+</div>
+</div>
+</div>
+<p class="text-gray-300 mb-6">"These fleece blankets are perfect for those chilly Western Cape evenings! The quality is outstanding, and they arrived the very next day with free delivery. Great service and amazing products!"</p>
+<div class="flex items-center">
+<div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mr-4">
+<span class="font-bold text-lg">TN</span>
+</div>
+<div>
+<h4 class="font-bold">Thandi Nkosi</h4>
+<p class="text-sm text-gray-400">Constantia, Cape Town</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter Section -->
+<section class="py-20">
+<div class="container mx-auto px-6">
+<div class="bg-[#1D100A] rounded-lg p-12 shadow-xl">
+<div class="max-w-3xl mx-auto text-center">
+<h2 class="text-4xl font-bold mb-4">Stay Cozy, Stay Updated</h2>
+<p class="text-lg mb-8 text-gray-300">Subscribe to our newsletter for seasonal tips, exclusive discounts, and new product announcements.</p>
+<div class="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto">
+<input type="email" placeholder="Enter your email" class="custom-input flex-grow px-4 py-3 rounded-button bg-[#2B1810] border-2 border-[#3D2A1F] focus:outline-none text-white">
+<button class="bg-primary text-white px-6 py-3 rounded-button hover:bg-opacity-90 transition-colors whitespace-nowrap">Subscribe</button>
+</div>
+<p class="text-sm mt-4 text-gray-400">By subscribing, you agree to receive marketing emails from WARM. You can unsubscribe at any time.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#1A0F09] pt-20 pb-10">
+<div class="container mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+<!-- Company Info -->
+<div>
+<h3 class="text-2xl font-['Pacifico'] text-white mb-6">WARM</h3>
+<p class="text-gray-400 mb-6">Bringing comfort and warmth to your winter days since 2015. Our mission is to create premium products that enhance your comfort during the coldest months.</p>
+<div class="flex space-x-4">
+<a href="#" class="text-gray-400 hover:text-primary transition-colors">
+<div class="w-10 h-10 flex items-center justify-center">
+<i class="ri-facebook-fill ri-lg"></i>
+</div>
+</a>
+<a href="#" class="text-gray-400 hover:text-primary transition-colors">
+<div class="w-10 h-10 flex items-center justify-center">
+<i class="ri-instagram-line ri-lg"></i>
+</div>
+</a>
+<a href="#" class="text-gray-400 hover:text-primary transition-colors">
+<div class="w-10 h-10 flex items-center justify-center">
+<i class="ri-twitter-x-line ri-lg"></i>
+</div>
+</a>
+<a href="#" class="text-gray-400 hover:text-primary transition-colors">
+<div class="w-10 h-10 flex items-center justify-center">
+<i class="ri-pinterest-line ri-lg"></i>
+</div>
+</a>
+</div>
+</div>
+<!-- Quick Links -->
+<div>
+<h4 class="text-lg font-bold mb-6">Quick Links</h4>
+<ul class="space-y-3">
+<li><a href="#" class="text-gray-400 hover:text-primary transition-colors">Home</a></li>
+<li><a href="#" class="text-gray-400 hover:text-primary transition-colors">Shop All</a></li>
+<li><a href="#" class="text-gray-400 hover:text-primary transition-colors">About Us</a></li>
+<li><a href="#" class="text-gray-400 hover:text-primary transition-colors">Winter Care Tips</a></li>
+<li><a href="#" class="text-gray-400 hover:text-primary transition-colors">Sustainability</a></li>
+<li><a href="#" class="text-gray-400 hover:text-primary transition-colors">Contact Us</a></li>
+</ul>
+</div>
+<!-- Customer Service -->
+<div>
+<h4 class="text-lg font-bold mb-6">Customer Service</h4>
+<ul class="space-y-3">
+<li><a href="#" class="text-gray-400 hover:text-primary transition-colors">My Account</a></li>
+<li><a href="#" class="text-gray-400 hover:text-primary transition-colors">Track Your Order</a></li>
+<li><a href="#" class="text-gray-400 hover:text-primary transition-colors">Shipping Policy</a></li>
+<li><a href="#" class="text-gray-400 hover:text-primary transition-colors">Returns & Exchanges</a></li>
+<li><a href="#" class="text-gray-400 hover:text-primary transition-colors">FAQs</a></li>
+<li><a href="#" class="text-gray-400 hover:text-primary transition-colors">Product Care</a></li>
+</ul>
+</div>
+<!-- Contact Info -->
+<div>
+<h4 class="text-lg font-bold mb-6">Contact Us</h4>
+<ul class="space-y-3">
+<li class="flex items-start">
+<div class="mr-3 mt-1">
+<div class="w-5 h-5 flex items-center justify-center">
+<i class="ri-map-pin-line"></i>
+</div>
+</div>
+<span class="text-gray-400">123 Long Street, Gardens, Cape Town, 8001, South Africa</span>
+</li>
+<li class="flex items-start">
+<div class="mr-3 mt-1">
+<div class="w-5 h-5 flex items-center justify-center">
+<i class="ri-phone-line"></i>
+</div>
+</div>
+<span class="text-gray-400">+27 (021) 123-4567</span>
+</li>
+<li class="flex items-start">
+<div class="mr-3 mt-1">
+<div class="w-5 h-5 flex items-center justify-center">
+<i class="ri-mail-line"></i>
+</div>
+</div>
+<span class="text-gray-400">support@warmproducts.com</span>
+</li>
+<li class="flex items-start">
+<div class="mr-3 mt-1">
+<div class="w-5 h-5 flex items-center justify-center">
+<i class="ri-time-line"></i>
+</div>
+</div>
+<span class="text-gray-400">Monday-Friday: 9am-6pm EST</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="border-t border-[#3D2A1F] pt-8">
+<div class="flex flex-col md:flex-row justify-between items-center">
+<p class="text-gray-400 text-sm mb-4 md:mb-0">© 2025 WARM. All rights reserved.</p>
+<div class="flex flex-wrap justify-center gap-4">
+<div class="text-gray-400">
+<div class="w-8 h-8 flex items-center justify-center">
+<i class="ri-visa-line ri-lg"></i>
+</div>
+</div>
+<div class="text-gray-400">
+<div class="w-8 h-8 flex items-center justify-center">
+<i class="ri-mastercard-line ri-lg"></i>
+</div>
+</div>
+<div class="text-gray-400">
+<div class="w-8 h-8 flex items-center justify-center">
+<i class="ri-paypal-line ri-lg"></i>
+</div>
+</div>
+<div class="text-gray-400">
+<div class="w-8 h-8 flex items-center justify-center">
+<i class="ri-apple-fill ri-lg"></i>
+</div>
+</div>
+<div class="text-gray-400">
+<div class="w-8 h-8 flex items-center justify-center">
+<i class="ri-amazon-line ri-lg"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<script id="navbarToggle">
+document.addEventListener('DOMContentLoaded', function() {
+// Mobile menu functionality would go here
+});
+</script>
+<script id="productInteractions">
+document.addEventListener('DOMContentLoaded', function() {
+// Product card hover effects
+const productCards = document.querySelectorAll('.product-card');
+productCards.forEach(card => {
+card.addEventListener('mouseenter', () => {
+card.classList.add('shadow-xl');
+});
+card.addEventListener('mouseleave', () => {
+card.classList.remove('shadow-xl');
+});
+});
+});
+</script>
+<script id="newsletterForm">
+document.addEventListener('DOMContentLoaded', function() {
+const emailInput = document.querySelector('input[type="email"]');
+const subscribeButton = emailInput.nextElementSibling;
+subscribeButton.addEventListener('click', function() {
+const email = emailInput.value.trim();
+if (email === '') {
+alert('Please enter your email address.');
+return;
+}
+if (!isValidEmail(email)) {
+alert('Please enter a valid email address.');
+return;
+}
+// Simulate subscription success
+alert('Thank you for subscribing to our newsletter!');
+emailInput.value = '';
+});
+function isValidEmail(email) {
+const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+return re.test(email);
+}
+});
+</script>
+</body>
+</html>
